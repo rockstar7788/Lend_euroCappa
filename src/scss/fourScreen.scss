@@ -1,0 +1,49 @@
+.fourScreen {
+    .startHealth {
+        display: block;
+        text-align: center;
+        margin: 80px auto 30px auto;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: white;
+        background-color: #f88234;
+        width: max-content;
+        padding: 7px 15px;
+    }
+
+    .startHealthContent {
+        display: flex;
+        align-items: flex-start;
+
+        .healthTitle {
+            width: 45%;
+            background-color: #3e6698;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 32px;
+            font-weight: 100;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .healthTxt {
+            width: 55%;
+            padding: 0 60px;
+            font-size: 18px;
+            color: #3e6698;
+            font-weight: 100;
+
+            p {
+                margin-top: 0;
+            }
+
+            a {
+                color: #3e6698;
+                font-size: 22px;
+                text-decoration: none;
+                border-bottom: 1px solid #3e6698;
+            }
+        }
+    }
+}

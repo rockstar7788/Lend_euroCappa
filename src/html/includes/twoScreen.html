@@ -1,0 +1,15 @@
+<div class="twoScreen">
+    <div class="container">
+        <span class="ScreenTitle">
+            приемущества
+        </span>
+        <div class="containerSmallBlock">
+            <% smallBlock.forEach( el => {  %>
+            <div class="smallBlock">
+                <span class="smallBlockTitle"><%= el.title %></span>
+                <span class="smallBlockTxt"><%= el.txt %></span>
+            </div>
+            <%  } ) %>
+        </div>
+    </div>
+</div>

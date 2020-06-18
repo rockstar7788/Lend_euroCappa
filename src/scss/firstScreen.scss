@@ -1,0 +1,64 @@
+.firstScreen {
+    background-color: #ceeef1;
+    min-height: 550px;
+    background: url("./../img/face.png") no-repeat scroll left bottom / auto 85%,
+        url("./../img/hand.png") no-repeat scroll right bottom / auto 125% #ceeef1;
+    color: #4b6aa2;
+    padding: 40px 0;
+    position: relative;
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 550px;
+    }
+
+    .faceBox {
+        img {
+            background-image: linear-gradient(0deg, #ffece8 0%, #e2d2c3 100%);
+            max-width: 320px;
+        }
+    }
+
+    .buttonSale {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        font-size: 34px;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Tenor Sans", sans-serif;
+        background-color: #f88234;
+        padding: 5px 10px;
+        max-width: 225px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.5s;
+            background-color: #4b6aa2;
+        }
+    }
+
+    .faceBox_txt {
+        max-width: 450px;
+        margin-top: 30px;
+        font-size: 18px;
+        position: relative;
+        padding-left: 25px;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: -5px;
+            background-image: url("../img/kv.png");
+            background-size: 100% 100%;
+            width: 16px;
+            height: 13px;
+        }
+    }
+}

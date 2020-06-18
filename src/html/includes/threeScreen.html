@@ -1,0 +1,27 @@
+<div class="threeScreen">
+    <div class="container">
+        <span class="ScreenTitle">
+            лечение
+        </span>
+        <div class="slider">
+            <div class="slider__wrapper">
+                <% firstSlider.forEach( el => { %>
+                <div class="slider__item">
+                    <div class="slider_content">
+                        <div class="slider_txt">
+                            <span class="txt_id"><%= el.id %></span>
+                            <span class="txt_title"><%= el.title %></span>
+                            <span class="txt_content"><%= el.txt %></span>
+                        </div>
+                        <div class="slider_img">
+                            <img src="<%= el.img %>">
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+            <a class="slider__control slider__control_left" href="#" role="button"></a>
+            <a class="slider__control slider__control_right" href="#" role="button"></a>
+        </div>
+    </div>
+</div>

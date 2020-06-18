@@ -1,0 +1,116 @@
+.slider {
+    // position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 980px) {
+    .slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.slider__control {
+    position: absolute;
+    top: calc(50% + 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+.slider__control_left {
+    left: 0;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("./../img/left.png");
+}
+
+.slider__control_right::before {
+    background-image: url("./../img/right.png");
+}
+
+.slider__item {
+    .slider_content {
+        display: flex;
+
+        .slider_txt {
+            width: 40%;
+            padding: 15px;
+            background-color: #ceeef1;
+            color: #3e6698;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .txt_id {
+                display: block;
+                margin: 20px 0;
+                font-size: 18px;
+            }
+
+            .txt_title {
+                text-transform: uppercase;
+                font-size: 25px;
+                margin: 10px 0;
+                display: block;
+            }
+
+            .txt_content {
+                display: block;
+                font-size: 18px;
+                line-height: 1.1;
+            }
+        }
+
+        .slider_img {
+            width: 60%;
+        }
+    }
+}
+
+.threeScreen {
+    .container {
+        position: relative;
+    }
+}
